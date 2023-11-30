@@ -26,7 +26,7 @@ floodfill(x1,y1-1,oldclr,fillclr);
 }
 }
 int main()
-PRACTICAL NO. 03 :-
+//PRACTICAL NO. 03 :-
 {
 int gd=DETECT,gm;
 initgraph(&gd,&gm,NULL);
