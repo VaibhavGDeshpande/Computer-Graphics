@@ -1,5 +1,6 @@
 #include<iostream.h>
 #include<graphics.h>
+using namespace std;
 void drawline(int x0, int y0, int x1, int y1)
 {
 int dx, dy, p, x, y;
