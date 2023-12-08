@@ -14,33 +14,35 @@ int main()
     {
         for(int i=80;i>=0;i-=20)
         {
-            setcolor(8);         //GREY
-            circle(320,240,65);
-            circle(320,240,67);
-            setfillstyle(SOLID_FILL,13);      //PINK
-            bar(310,30,330,360);
+            setcolor(8);         //GREY fans outer rings
+            circle(320,100,65);
+            circle(320,100,67);
+            setfillstyle(SOLID_FILL,13);      //pink stand bar
+            bar(310,100,330,360);
             setfillstyle(SOLID_FILL,6);
-            bar(290,360,350,375);
+            bar(290,360,350,375);			// bottom bar
             setcolor(2);
             setfillstyle(SOLID_FILL,10);
-            pieslice(320,240,i,i+40,60);
-            pieslice(320,240,i+120,i+160,60);
-            pieslice(320,240,i+240,i+280,60);
+            pieslice(320,100,i,i+40,60);
+            pieslice(320,100,i+120,i+160,60);
+            pieslice(320,100,i+240,i+280,60);
             setcolor(4);
-            circle(320,240,10);
+            circle(320,100,10);
             setfillstyle(SOLID_FILL,12);
-            floodfill(320,240,4);
+            floodfill(320,100,4);
             delay(100);
-         setcolor(0);
-        setfillstyle(SOLID_FILL,0);
-        pieslice(320,240,i,i+40,60);
-        pieslice(320,240,i+120,i+160,60);
-        pieslice(320,240,i+240,i+280,60);
-        setcolor(4);
-ID:23110087
-        circle(320,240,10);
-        setfillstyle(SOLID_FILL,12);
-        floodfill(320,240,4); }}
+         	setcolor(0);
+        	setfillstyle(SOLID_FILL,0);
+        	pieslice(320,100,i,i+40,60);
+        	pieslice(320,100,i+120,i+160,60);
+        	pieslice(320,100,i+240,i+280,60);
+        	setcolor(4);
+
+        	circle(320,100,10);
+        	setfillstyle(SOLID_FILL,12);
+        	floodfill(320,100,4); 
+		}
+	}
     getch();
     closegraph();
-    return 0; }
+}
